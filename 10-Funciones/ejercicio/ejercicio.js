@@ -6,7 +6,7 @@ let cantidadAlumnos, cantidadNotas, promedioGrupal;
 let datosGrupo = [];
 
 //solicitamos los datos
-cantidadAlumnos = Number(prompt('Ingresa la cantidad de alunos en tu grupo'));
+cantidadAlumnos = Number(prompt('Ingresa la cantidad de alumnos en tu grupo'));
 cantidadNotas = Number(prompt('Ingresa la cantidad de notas a promediar por alumno'));
 
 function SolicitarAlumnos(){
