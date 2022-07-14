@@ -9,6 +9,7 @@ let datosGrupo = [];
 cantidadAlumnos = Number(prompt('Ingresa la cantidad de alumnos en tu grupo'));
 cantidadNotas = Number(prompt('Ingresa la cantidad de notas a promediar por alumno'));
 
+//Funcion que realiza la solicitud de datos al usuario para cada alumno
 function SolicitarAlumnos(){
     //variables
     let grupo = [];
@@ -42,10 +43,9 @@ function SolicitarAlumnos(){
     return grupo;
 }
 
-//console.log(SolicitarAlumnos());
 datosGrupo = SolicitarAlumnos();
 
-//Funcion que realiza el promedio
+//Funcion que realiza el promedio indivudual y grupal
 function Promedio(){
     let sumaGrupal = 0;
     let grupoTexto = "";
