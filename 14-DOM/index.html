@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>DOM</title>
+
+    <script defer src="DOM.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Registro en nuestra App</h1>
+    </header>
+    <main>
+        <section>
+            <h3>Datos Básicos</h3>
+            <label for="txtNombre">Nombres:</label>
+            <input id="txtNombre" type="text">
+            <label for="txtApellidos">Apellidos:</label>
+            <input id="txtApellidos" type="text">
+            <label for="txtFechaNac">Fecha Nacimiento:</label>
+            <input id="txtFechaNac" type="date">
+        </section>
+        <section>
+            <h3>Otros Datos</h3>
+            <label for="">Género</label>
+            <input type="radio" name="genero" id="Masculino" checked onclick="SeleccionarGenero()"> Masculino
+            <input type="radio" name="genero" id="Femenino" onclick="SeleccionarGenero()"> Femenino
+            <input type="radio" name="genero" id="O" onclick="SeleccionarGenero()"> Otro
+            <input id="txtOtro" type="text" class="invisible">
+            <br>
+            <br>
+            <label for="">Nivel Académico</label>
+            <select name="" id="listNivel">
+                <option value="1">Primaria</option>
+                <option value="2">Secundaria</option>
+                <option value="3">Universitario</option>
+                <option value="4">Posgrado</option>
+            </select>
+        </section>
+        <br>
+            <br>
+        <label for="">Acepto terminos y condiciones </label>
+        <input type="checkbox" name="" id="chkAcepto" onclick="AceptaTerminos()">
+        <br>
+            <br>
+        <button onclick="Registrar()" class="invisible">Registrar</button>
+        <br>
+        <br>
+        <table id="registro" border="1px">
+            <tbody id="tbody">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Genero</th>
+                    <th>Nivel Academico</th>
+                </tr>
+            </tbody>            
+        </table>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
