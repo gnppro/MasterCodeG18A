@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Materialize CSS</title>
+
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <div class="container-fluid blue lighten-2 alto">
+        <div class="row">
+            <div class="col s1 teal darken-1 white-text cuadros">1</div>
+            <div class="col s1 teal darken-1 white-text cuadros">2</div>
+            <div class="col s1 teal darken-1 white-text cuadros">3</div>
+            <div class="col s1 teal darken-1 white-text cuadros">4</div>
+            <div class="col s1 teal darken-1 white-text cuadros">5</div>
+            <div class="col s1 teal darken-1 white-text cuadros">6</div>
+            <div class="col s1 teal darken-1 white-text cuadros">7</div>
+            <div class="col s1 teal darken-1 white-text cuadros">8</div>
+            <div class="col s1 teal darken-1 white-text cuadros">9</div>
+            <div class="col s1 teal darken-1 white-text cuadros">10</div>
+            <div class="col s1 teal darken-1 white-text cuadros">11</div>
+            <div class="col s1 teal darken-1 white-text cuadros">12</div>
+        </div>
+        <div class="row">
+            <div class="col s6 brown darken-1 white-text cuadros">6</div>
+            <div class="col s6 brown darken-1 white-text cuadros">6</div>
+        </div>
+        <div class="row">
+            <div class="col s3 green darken-2 white-text cuadros">3</div>
+            <div class="col s3 green darken-2 white-text cuadros">3</div>
+            <div class="col s3 green darken-2 white-text cuadros">3</div>
+            <div class="col s3 green darken-2 white-text cuadros">3</div>
+        </div>
+        <div class="row">
+            <div class="col s6 offset-s3 brown darken-1 white-text cuadros">Offset 3</div>
+        </div>
+        <div class="row">
+            <div class="col s6 offset-s6 teal darken-1 white-text cuadros">Offset 6</div>
+        </div>
+        <div class="row">
+            <div id="derecha" class="col s3 green darken-2 white-text cuadros">Columna Derecha</div>
+            <div id="izquierda" class="col s3 green darken-2 white-text cuadros">Columna Izquiera</div>
+            <div class="col s3">
+                <a class="waves-effect waves-light btn btn-small brown darken-1 right" onclick="Ordenar()"><i class="material-icons left">cloud</i>Ordenar</a>
+                <!-- Dropdown Trigger -->
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6 m3 l1 teal darken-1 white-text cuadros">3</div>
+            <div class="col s6 m3 l1 teal darken-1 white-text cuadros">3</div>
+            <div class="col s6 m3 l1 teal darken-1 white-text cuadros">3</div>
+            <div class="col s6 m3 l1 teal darken-1 white-text cuadros z-depth-5"><img src="https://i.pinimg.com/474x/02/d1/18/02d118d439114f6ae64ef4f64b5f09e0.jpg" alt="Goku" class="responsive-img circle"></div>
+        </div>
+        <div class="row white">
+            <table class="striped highlight responsive-table">
+                <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Item Name</th>
+                      <th>Item Price</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                  </tr>
+                  <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                  </tr>
+                  <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="row">
+            <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+              </ul>
+        </div>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+        </ul>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+    <script src="js/materialize.js"></script>
+</body>
+</html>
