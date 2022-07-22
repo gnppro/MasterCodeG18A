@@ -133,4 +133,4 @@ console.log(users);
 // 2.1.- Reto Adicional: Si el usuario ya ingreso a su cuenta (isLoggedIn: true), informe al usuario que ya esta loggeado.
 
 
-// 3.0 Sustituir con valores del DOM los parametros de la función
+// 3.0 Sustituir con valores del DOM los parametros de las funciónes => ingresar y registrarse
